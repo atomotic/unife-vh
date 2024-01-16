@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>unife/virtualheritage/8501</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+    />
+  </head>
+  <body>
+    <div
+      id="mirador"
+      style="position: absolute; top: 0; bottom: 0; left: 0; right: 0"
+    ></div>
+    <script type="text/javascript" src="dist/main.js"></script>
+
+    <script type="text/javascript">
+      var miradorInstance = renderMirador({
+        id: "mirador",
+        windows: [
+          {
+            id: "w1",
+            loadedManifest:
+              "https://virtualheritage.unife.it/iiif/3/8501/manifest",
+            canvasIndex: 1,
+          },
+          {
+            id: "w2",
+            loadedManifest:
+              "https://gallerie-estensi.jarvis.memooria.org/meta/iiif/736815c4-31ff-41db-8ad1-77a65f8f10e0/manifest",
+          },
+        ],
+        osdConfig: { maxZoomPixelRatio: 10 },
+        window: {
+          allowFullscreen: true,
+          allowClose: false,
+        },
+        workspaceControlPanel: {
+          enabled: false,
+        },
+      });
+    </script>
+  </body>
+</html>
