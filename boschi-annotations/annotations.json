@@ -1,0 +1,294 @@
+[
+    {
+        "id": "#273c75dd-367e-4b51-9161-93904f3faaa4",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "2 - Christiansen, di Copenaghen",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3635.818115234375,3220.470458984375,35.549072265625,99.086181640625",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#561b0d56-58c5-4052-b4af-8bad87307328",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "3 - Negro, di Torino",
+                "wiki": "https://it.wikipedia.org/wiki/Camillo_Negro",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3347.22021484375,3466.051025390625,101.413818359375,127.417236328125",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#65872572-0f65-4ff5-83f2-956602134b09",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "4 - Froment, di Lione",
+                "wiki": "https://en.wikipedia.org/wiki/Jules_Froment",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:2948.55419921875,3417.585693359375,102.163330078125,128.708740234375",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#ba92ded7-7bf7-4b74-abaf-b7d2983d03b4",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "1 - Babinsky, di Parigi",
+                "wiki": "https://it.wikipedia.org/wiki/Joseph_Babinski",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3780.81591796875,3257.303955078125,68.028564453125,112.62109375",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#06618e89-f60f-44ba-8471-394bc8b03a23",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "5 - Souques, di Parigi",
+                "wiki": "https://en.wikipedia.org/wiki/Alexandre-Achille_Souques",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:4207.95166015625,3323.769287109375,69.283203125,94.943359375",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#6eb963e8-8386-49ec-96ab-f9ef70cfb3e3",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "6 - Marinesco, di Bucarest",
+                "wiki": "https://it.wikipedia.org/wiki/Gheorghe_Marinescu",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:4319.634765625,3244.438232421875,75.74951171875,121.938232421875",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#23b9b986-1bae-468c-9c9f-3871f1ee51f5",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "7 - Boschi, di Ferrara",
+                "wiki": "https://it.wikipedia.org/wiki/Gaetano_Boschi",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3680.2548828125,3225.951416015625,53.901611328125,91.33544921875",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#19b1e838-aad3-496d-9872-70874f82fb0e",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "8 - Mingazzini",
+                "wiki": "https://it.wikipedia.org/wiki/Giovanni_Mingazzini",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3738.209228515625,3202.612060546875,62.229736328125,97.948486328125",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#4320747e-3356-400a-99ce-2c68bc8cc05c",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "9 - Meige, di Parigi",
+                "wiki": "https://it.wikipedia.org/wiki/Henry_Meige",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3811.576416015625,3194.756103515625,60.636474609375,69.91748046875",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#2b9feab1-82b9-49fc-bc33-686ccd209c61",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "10 - Minor, di Mosca",
+                "wiki": "https://en.wikipedia.org/wiki/Lazar_Solomonovich_Minor",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3875.411376953125,3210.64013671875,68,105.207763671875",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#f12923ca-91de-4359-a66d-19e5b97a2261",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "11 - Soderbergh, di Gotenberg",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3576.4677734375,3179.84765625,64.15087890625,91.094482421875",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#4c4a50b5-f937-46dc-9d7c-93ec06e31e83",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "12 - Guillain, di Parigi",
+                "wiki": "https://it.wikipedia.org/wiki/Georges_Guillain",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3404.54296875,3226.036376953125,75.6982421875,110.33984375",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#ff63126d-3512-47d2-a0ff-45d633be89dc",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "13 - Crouzon, di Parigi",
+                "wiki": "https://it.wikipedia.org/wiki/Octave_Crouzon",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3288.6220703125,3215.166015625,73.89208984375,96.001220703125",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    },
+    {
+        "id": "#9b446e1f-56ec-4c00-ad42-276ec0fff3fb",
+        "body": [
+            {
+                "type": "TextualBody",
+                "value": "14 - Bing, di Basilea",
+                "wiki": "https://en.wikipedia.org/wiki/Paul_Robert_Bing",
+                "purpose": "commenting"
+            }
+        ],
+        "type": "Annotation",
+        "target": {
+            "source": "https://virtualheritage.unife.it/iiif/3/9341",
+            "selector": {
+                "type": "FragmentSelector",
+                "value": "xywh=pixel:3052.1259765625,3204.00927734375,72.054443359375,92.37744140625",
+                "conformsTo": "http://www.w3.org/TR/media-frags/"
+            }
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld"
+    }
+]
