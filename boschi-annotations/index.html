@@ -1,133 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Annotorious</title>
-    <style>
-      html,
-      body,
-      #openseadragon {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-      }
+    <head>
+        <meta charset="utf-8" />
+        <title>Annotorious</title>
+        <style>
+            html,
+            body,
+            #openseadragon {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
 
-      .openseadragon-canvas {
-        outline: none;
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@annotorious/openseadragon@latest/dist/annotorious-openseadragon.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/openseadragon@4.1.0/build/openseadragon/openseadragon.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@annotorious/openseadragon@latest/dist/annotorious-openseadragon.js"></script>
-  </head>
+            .openseadragon-canvas {
+                outline: none;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@annotorious/openseadragon@latest/dist/annotorious-openseadragon.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/openseadragon@4.1.0/build/openseadragon/openseadragon.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@annotorious/openseadragon@latest/dist/annotorious-openseadragon.js"></script>
+    </head>
 
-  <body>
-    <div id="openseadragon">
-      <div
-        id="info"
-        style="
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          z-index: 1;
-          background: rgb(255, 255, 255);
-          padding: 20px;
-          width: 300px;
-          border-radius: 5px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          border: 1px solid rgba(0, 0, 0, 0.1);
-          visibility: hidden;
-        "
-      ></div>
-    </div>
+    <body>
+        <div id="openseadragon">
+            <div
+                id="info"
+                style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    z-index: 1;
+                    background: rgb(255, 255, 255);
+                    padding: 20px;
+                    width: 300px;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    visibility: hidden;
+                "
+            ></div>
+        </div>
 
-    <script>
-      function fetchWikipedia(source) {
-        const baseUrl = source.startsWith("https://it.wikipedia")
-          ? "https://it.wikipedia.org/api/rest_v1/page/summary/"
-          : source.startsWith("https://en.wikipedia")
-          ? "https://en.wikipedia.org/api/rest_v1/page/summary/"
-          : (() => {
-              throw new Error("Unsupported wiki domain");
-            })();
+        <script>
+            function fetchWikipedia(source) {
+                const baseUrl = source.startsWith("https://it.wikipedia")
+                    ? "https://it.wikipedia.org/api/rest_v1/page/summary/"
+                    : source.startsWith("https://en.wikipedia")
+                      ? "https://en.wikipedia.org/api/rest_v1/page/summary/"
+                      : (() => {
+                            throw new Error("Unsupported wiki domain");
+                        })();
 
-        const wikiURL = new URL(source);
-        const lastPart = wikiURL.pathname.split("/").pop();
+                const wikiURL = new URL(source);
+                const lastPart = wikiURL.pathname.split("/").pop();
 
-        return fetch(baseUrl + lastPart)
-          .then((response) => response.json())
-          .catch((error) => console.error("Error:", error));
-      }
+                return fetch(baseUrl + lastPart)
+                    .then((response) => response.json())
+                    .catch((error) => console.error("Error:", error));
+            }
 
-      window.onload = function () {
-        var viewer = OpenSeadragon({
-          id: "openseadragon",
-          prefixUrl: "images/",
-          crossOriginPolicy: "Anonymous",
-          gestureSettingsMouse: {
-            clickToZoom: false,
-          },
-          gestureSettingsTouch: {
-            pinchRotate: true,
-          },
-        });
+            window.onload = function () {
+                var viewer = OpenSeadragon({
+                    id: "openseadragon",
+                    prefixUrl: "images/",
+                    crossOriginPolicy: "Anonymous",
+                    gestureSettingsMouse: {
+                        clickToZoom: false,
+                    },
+                    gestureSettingsTouch: {
+                        pinchRotate: true,
+                    },
+                });
 
-        viewer.open("https://virtualheritage.unife.it/iiif/3/9341/info.json");
+                viewer.open(
+                    "https://virtualheritage.unife.it/iiif/3/9341/info.json",
+                );
 
-        var anno = AnnotoriousOSD.createOSDAnnotator(viewer, {
-          pointerSelectAction: AnnotoriousOSD.PointerSelectAction.SELECT,
-          autoSave: true,
-          adapter: AnnotoriousOSD.W3CImageFormat(
-            "https://virtualheritage.unife.it/iiif/3/9341"
-          ),
-          drawingEnabled: false,
-          style: {
-            fill: "#ff0000",
-            stroke: "#ff0000",
-            fillOpacity: 0.1,
-            strokeOpacity: 0.9,
-            strokeWidth: 1,
-          },
-        });
+                var anno = AnnotoriousOSD.createOSDAnnotator(viewer, {
+                    userSelectAction: AnnotoriousOSD.UserSelectAction.SELECT,
+                    autoSave: true,
+                    adapter: AnnotoriousOSD.W3CImageFormat(
+                        "https://virtualheritage.unife.it/iiif/3/9341",
+                    ),
+                    drawingEnabled: false,
+                    style: {
+                        fill: "#ff0000",
+                        stroke: "#ff0000",
+                        fillOpacity: 0.1,
+                        strokeOpacity: 0.9,
+                        strokeWidth: 1,
+                    },
+                });
 
-        anno.loadAnnotations("annotations.json");
+                anno.loadAnnotations("annotations.json");
 
-        const infoDiv = document.getElementById("info");
+                const infoDiv = document.getElementById("info");
 
-        anno.on("clickAnnotation", (a) => {
-          // console.log("clicked", a);
-          // infoDiv.innerHTML = a.body[0].value;
+                anno.on("clickAnnotation", (a) => {
+                    // console.log("clicked", a);
+                    // infoDiv.innerHTML = a.body[0].value;
 
-          if (a.body[0].wiki) {
-            fetchWikipedia(a.body[0].wiki).then((data) => {
-              // console.log(data);
-              infoDiv.innerHTML = `
+                    if (a.body[0].wiki) {
+                        fetchWikipedia(a.body[0].wiki).then((data) => {
+                            // console.log(data);
+                            infoDiv.innerHTML = `
               <h2>${data.title}</h2>
               <p>${data.extract}</p>
               <a href="${
-                data.content_urls.desktop.page
+                  data.content_urls.desktop.page
               }" target="_blank">↗ wikipedia</a>
               <br/>
               ${
-                data.thumbnail && data.thumbnail.source
-                  ? `<img src="${data.thumbnail.source}" alt="${data.title}" style="max-width: 90%;" />`
-                  : ""
+                  data.thumbnail && data.thumbnail.source
+                      ? `<img src="${data.thumbnail.source}" alt="${data.title}" style="max-width: 90%;" />`
+                      : ""
               }
             `;
-            });
-          } else {
-            infoDiv.innerHTML = a.body[0].value;
-          }
+                        });
+                    } else {
+                        infoDiv.innerHTML = a.body[0].value;
+                    }
 
-          infoDiv.style.visibility = "visible";
-        });
+                    infoDiv.style.visibility = "visible";
+                });
 
-        window.anno = anno;
-      };
-    </script>
-  </body>
+                window.anno = anno;
+            };
+        </script>
+    </body>
 </html>
